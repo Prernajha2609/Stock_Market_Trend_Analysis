@@ -8,7 +8,7 @@ from sqlalchemy import create_engine
 # Load environment variables
 load_dotenv()
 # Database configuration
-DATABASE_URL = os.getenv('DATABASE_URL', 'mysql+pymysql://stock_user:yourpassword@localhost/stock_market_db')
+DATABASE_URL = os.getenv('DATABASE_URL', 'mysql+pymysql://root:1234@localhost:3306/stock_market_db')
 # Default settings - Use real-time dates
 DEFAULT_START_DATE = '2020-01-01'
 DEFAULT_END_DATE = datetime.now().strftime('%Y-%m-%d')  # Today's date
